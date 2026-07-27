@@ -13,11 +13,13 @@
 (async()=>{
  try{
   let h=await(await fetch('https://raw.githubusercontent.com/almohammdin/majalis-development/21fbffbbc95d6600f2c76ce6d735411757d0a1e1/investment.html',{cache:'no-store'})).text();
-  const fix=`<style id="sar-color-fix">
+  const fix=`<style id="investment-visual-fixes">
   .sar img{display:inline-block;mix-blend-mode:normal!important;opacity:1!important;filter:brightness(0) saturate(100%) invert(9%) sepia(23%) saturate(1508%) hue-rotate(169deg) brightness(93%) contrast(96%)!important}
   .hero .sar img,.ask .sar img{filter:brightness(0) invert(1)!important}
   .hero .ri small .sar img{filter:brightness(0) saturate(100%) invert(84%) sepia(28%) saturate(696%) hue-rotate(3deg) brightness(102%) contrast(90%)!important}
+  .gauge{background:linear-gradient(90deg,#2a8b61 0 25%,#94b84a 25% 45%,#e2b641 45% 65%,#d9832e 65% 82%,#b04444 82% 100%)!important}
   </style>`;
+  h=h.replace('الاتجاه العربي يبدأ من اليمين بالأخضر ويتدرج نحو اليسار بالأحمر.','الاتجاه العربي يبدأ من اليمين بالمخاطر الأعلى، ويتدرج نحو اليسار إلى الجاهزية الأعلى والمخاطر الأقل.');
   h=h.replace('</head>',fix+'</head>');
   document.open();document.write(h);document.close();
  }catch(e){document.body.innerHTML='<div class="loading">تعذر فتح الصفحة. أعد تحميلها.</div>'}
