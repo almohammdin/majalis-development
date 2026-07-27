@@ -1,0 +1,82 @@
+name: Inject investment section
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/inject-investment-section.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  inject:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inject section into index.html
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path('index.html')
+          s = p.read_text(encoding='utf-8')
+          start = '<!-- INVESTMENT-SECTION-START -->'
+          end = '<!-- INVESTMENT-SECTION-END -->'
+          block = r'''<!-- INVESTMENT-SECTION-START -->
+<style id="investment-hub-style">
+.investment-hub{max-width:1380px;margin:0 auto 15px;padding:0 18px;position:relative;z-index:4}
+.investment-hub-card{background:linear-gradient(145deg,#fff,#fbfcfd);border:1px solid rgba(11,26,43,.09);border-radius:18px;padding:18px;box-shadow:0 14px 40px rgba(11,26,43,.085)}
+.investment-hub-head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:14px}
+.investment-hub-title h2{margin:0;color:#0B1A2B;font-size:21px}.investment-hub-title p{margin:3px 0 0;color:#667487;font-size:11px}
+.investment-hub-admin{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 13px;border-radius:11px;text-decoration:none;font-size:11px;font-weight:900;background:#0B1A2B;color:#fff;border:1px solid #0B1A2B}
+.investment-hub-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.investment-stage{border:1px solid #DDE4EA;border-radius:15px;padding:15px;background:#fff;display:grid;gap:10px}
+.investment-stage-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}.investment-stage h3{margin:0;color:#0B1A2B;font-size:16px}.investment-stage small{display:block;color:#667487;font-size:9px;margin-top:2px}
+.investment-amount{font-size:21px;font-weight:900;color:#0B1A2B;direction:ltr;text-align:right}.investment-amount em{font-style:normal;color:inherit;font-size:.75em}
+.investment-stage-actions{display:flex;gap:7px;flex-wrap:wrap}.investment-stage-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:7px 11px;border-radius:10px;text-decoration:none;font-size:10px;font-weight:900}
+.investment-stage-actions .view{background:#C9A84C;color:#0B1A2B}.investment-stage-actions .manage{background:#F1F4F7;color:#0B1A2B;border:1px solid #DDE4EA}
+@media(max-width:760px){.investment-hub-head{align-items:flex-start;flex-direction:column}.investment-hub-grid{grid-template-columns:1fr}.investment-hub-admin{width:100%}}
+</style>
+<section class="investment-hub" aria-label="الاستثمار والجولات التمويلية">
+  <div class="investment-hub-card">
+    <div class="investment-hub-head">
+      <div class="investment-hub-title"><h2>الاستثمار والجولات التمويلية</h2><p>إدارة العرضين الاستثماريين والوصول إلى الصفحات المستقلة من لوحة تطوير مجالس.</p></div>
+      <a class="investment-hub-admin" href="investment-admin.html">فتح لوحة التحكم الاستثمارية</a>
+    </div>
+    <div class="investment-hub-grid">
+      <article class="investment-stage">
+        <div class="investment-stage-top"><div><h3>مرحلة ما قبل البذرة</h3><small>Pre-Seed</small></div><div class="investment-amount">375,000 <em>ر.س</em> · 5%</div></div>
+        <div class="investment-stage-actions"><a class="view" href="pre-seed.html">عرض الصفحة المستقلة</a><a class="manage" href="investment-admin.html">إدارة البيانات</a></div>
+      </article>
+      <article class="investment-stage">
+        <div class="investment-stage-top"><div><h3>مرحلة البذرة</h3><small>Seed</small></div><div class="investment-amount">8,000,000 <em>ر.س</em> · 21.05%</div></div>
+        <div class="investment-stage-actions"><a class="view" href="investment.html">عرض الصفحة المستقلة</a><a class="manage" href="investment-admin.html">إدارة البيانات</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- INVESTMENT-SECTION-END -->'''
+          if start in s and end in s:
+              a = s.index(start)
+              b = s.index(end, a) + len(end)
+              s = s[:a] + block + s[b:]
+          else:
+              marker = '<div class="notice">'
+              if marker in s:
+                  s = s.replace(marker, block + '\n' + marker, 1)
+              else:
+                  marker = '<main'
+                  if marker in s:
+                      s = s.replace(marker, block + '\n' + marker, 1)
+                  else:
+                      s = s.replace('</header>', '</header>\n' + block, 1)
+          p.write_text(s, encoding='utf-8')
+          PY
+      - name: Commit updated dashboard
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet && exit 0
+          git commit -m "دمج قسم الاستثمار داخل لوحة تطوير مجالس"
+          git push
