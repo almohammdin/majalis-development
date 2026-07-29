@@ -1,0 +1,2313 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0B1A2B" />
+    <title>استراتيجية مجالس | التموضع والنمو والثقة الرقمية</title>
+    <meta
+      name="description"
+      content="استراتيجية منصة مجالس: التموضع، خيارات الفوز، سلم المنتج، المنافسون، التكاملات، الشراكات، التصديق الرقمي، خارطة الترخيص والتنفيذ."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --navy: #0b1a2b;
+        --navy2: #15324f;
+        --gold: #c9a84c;
+        --gold2: #ead58d;
+        --bg: #f2f5f7;
+        --paper: #fff;
+        --soft: #f7f9fb;
+        --ink: #17212c;
+        --muted: #667487;
+        --line: #dde4ea;
+        --green: #247555;
+        --red: #a84040;
+        --amber: #956619;
+        --blue: #2c6497;
+        --purple: #6c55a3;
+        --shadow: 0 14px 40px rgba(11, 26, 43, 0.085);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family:
+          "IBM Plex Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
+        line-height: 1.8;
+      }
+      a {
+        color: var(--blue);
+      }
+      .hero {
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        background:
+          radial-gradient(
+            circle at 12% 10%,
+            rgba(201, 168, 76, 0.23),
+            transparent 31%
+          ),
+          radial-gradient(
+            circle at 88% 100%,
+            rgba(58, 112, 161, 0.31),
+            transparent 42%
+          ),
+          linear-gradient(145deg, #06101c, var(--navy) 58%, #173b5a);
+        padding: 35px 20px 62px;
+      }
+      .hero:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        opacity: 0.17;
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.075) 1px, transparent 1px),
+          linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.075) 1px,
+            transparent 1px
+          );
+        background-size: 42px 42px;
+      }
+      .hero-inner {
+        max-width: 1240px;
+        margin: auto;
+        position: relative;
+        z-index: 1;
+      }
+      .hero-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 22px;
+      }
+      .brand {
+        min-width: 280px;
+        min-height: 86px;
+        padding: 14px 20px;
+        background: #fbfaf6;
+        border: 1px solid rgba(201, 168, 76, 0.45);
+        border-radius: 19px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        box-shadow: 0 14px 32px rgba(0, 0, 0, 0.2);
+      }
+      .brand-mark {
+        width: 58px;
+        height: 58px;
+        border-radius: 16px;
+        background: var(--navy);
+        color: var(--gold2);
+        display: grid;
+        place-items: center;
+        font-weight: 800;
+        font-size: 28px;
+      }
+      .brand-copy {
+        color: var(--navy);
+        line-height: 1.23;
+      }
+      .brand-copy strong {
+        display: block;
+        font-size: 29px;
+        font-weight: 800;
+      }
+      .brand-copy span {
+        font-size: 11px;
+        color: #776329;
+        font-weight: 700;
+      }
+      .prepared {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.72);
+        text-align: left;
+      }
+      .prepared strong {
+        display: block;
+        color: var(--gold2);
+        font-size: 13px;
+      }
+      .hero-copy {
+        max-width: 1010px;
+        margin-top: 39px;
+      }
+      .eyebrow {
+        color: var(--gold2);
+        font-size: 13px;
+        font-weight: 700;
+      }
+      .hero h1 {
+        font-size: clamp(34px, 5vw, 58px);
+        line-height: 1.2;
+        margin: 8px 0 14px;
+      }
+      .hero p {
+        font-size: 17px;
+        color: rgba(255, 255, 255, 0.82);
+        max-width: 950px;
+        margin: 0;
+      }
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 25px;
+      }
+      .btn {
+        min-height: 44px;
+        padding: 9px 16px;
+        border-radius: 11px;
+        border: 1px solid transparent;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        font-size: 13px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .btn.gold {
+        background: var(--gold);
+        color: var(--navy);
+      }
+      .btn.ghost {
+        border-color: rgba(255, 255, 255, 0.25);
+        color: #fff;
+        background: rgba(255, 255, 255, 0.07);
+      }
+      .quick {
+        max-width: 1240px;
+        margin: -27px auto 18px;
+        padding: 0 18px;
+        position: relative;
+        z-index: 2;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+      .quick-card {
+        background: #fff;
+        border: 1px solid rgba(11, 26, 43, 0.08);
+        border-radius: 16px;
+        padding: 15px;
+        box-shadow: var(--shadow);
+      }
+      .quick-card span {
+        display: block;
+        font-size: 10px;
+        color: var(--muted);
+      }
+      .quick-card b {
+        display: block;
+        color: var(--navy);
+        font-size: 18px;
+        margin-top: 3px;
+      }
+      .layout {
+        max-width: 1240px;
+        margin: 0 auto 55px;
+        padding: 0 18px;
+        display: grid;
+        grid-template-columns: 265px minmax(0, 1fr);
+        gap: 18px;
+      }
+      .side {
+        position: sticky;
+        top: 14px;
+        align-self: start;
+        background: #fff;
+        border: 1px solid rgba(11, 26, 43, 0.07);
+        border-radius: 18px;
+        padding: 14px;
+        box-shadow: var(--shadow);
+        max-height: calc(100vh - 28px);
+        overflow: auto;
+      }
+      .side-title {
+        padding: 5px 8px 11px;
+        border-bottom: 1px solid var(--line);
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .side a {
+        display: block;
+        text-decoration: none;
+        padding: 8px 10px;
+        border-radius: 9px;
+        font-size: 12px;
+        color: #465467;
+      }
+      .side a:hover {
+        background: #f1f4f7;
+        color: var(--navy);
+      }
+      .content {
+        display: grid;
+        gap: 17px;
+        min-width: 0;
+      }
+      .card {
+        background: #fff;
+        border: 1px solid rgba(11, 26, 43, 0.07);
+        border-radius: 19px;
+        padding: 26px;
+        box-shadow: var(--shadow);
+        scroll-margin-top: 18px;
+        min-width: 0;
+      }
+      .card h2 {
+        font-size: 25px;
+        color: var(--navy);
+        margin: 0 0 7px;
+        line-height: 1.45;
+      }
+      .card h3 {
+        font-size: 17px;
+        color: var(--navy);
+        margin: 20px 0 7px;
+      }
+      .card p {
+        margin: 7px 0;
+      }
+      .lead {
+        font-size: 15px;
+        color: #3e4d5e;
+      }
+      .muted {
+        color: var(--muted);
+      }
+      .small {
+        font-size: 11px;
+      }
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        padding: 4px 9px;
+        border-radius: 999px;
+        background: #f7f0de;
+        color: #705817;
+        border: 1px solid #e6d39d;
+        font-size: 10px;
+        font-weight: 700;
+      }
+      .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+      }
+      .grid-4 {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
+      }
+      .fact,
+      .metric,
+      .choice,
+      .partner {
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 15px;
+        background: var(--soft);
+      }
+      .fact b,
+      .metric b,
+      .choice b,
+      .partner b {
+        display: block;
+        color: var(--navy);
+        font-size: 17px;
+        margin-bottom: 4px;
+      }
+      .fact span,
+      .metric span,
+      .choice span,
+      .partner span {
+        font-size: 11px;
+        color: var(--muted);
+      }
+      .number {
+        width: 35px;
+        height: 35px;
+        border-radius: 11px;
+        background: var(--navy);
+        color: #fff;
+        display: grid;
+        place-items: center;
+        font-size: 12px;
+        font-weight: 800;
+        margin-bottom: 8px;
+      }
+      .callout {
+        margin: 15px 0;
+        padding: 14px 16px;
+        border-radius: 13px;
+        border-right: 4px solid var(--blue);
+        background: #eff6ff;
+        color: #24486f;
+      }
+      .callout.gold {
+        background: #fff9e9;
+        border-right-color: var(--gold);
+        color: #5d4b1e;
+      }
+      .callout.green {
+        background: #f0faf5;
+        border-right-color: var(--green);
+        color: #1f6147;
+      }
+      .callout.red {
+        background: #fff2f2;
+        border-right-color: var(--red);
+        color: #7b3030;
+      }
+      .strategy-verdict {
+        display: grid;
+        grid-template-columns: 1.35fr 0.65fr;
+        gap: 14px;
+        margin-top: 16px;
+      }
+      .verdict-main {
+        padding: 20px;
+        border-radius: 15px;
+        background: linear-gradient(145deg, var(--navy), var(--navy2));
+        color: #fff;
+      }
+      .verdict-main strong {
+        display: block;
+        font-size: 21px;
+        color: var(--gold2);
+        margin-bottom: 5px;
+      }
+      .verdict-side {
+        display: grid;
+        gap: 10px;
+      }
+      .ladder {
+        display: grid;
+        gap: 9px;
+        margin-top: 14px;
+      }
+      .rung {
+        display: grid;
+        grid-template-columns: 115px 1fr 190px;
+        gap: 13px;
+        align-items: center;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 13px;
+        background: #fff;
+      }
+      .rung-level {
+        background: var(--navy);
+        color: #fff;
+        border-radius: 11px;
+        padding: 10px;
+        text-align: center;
+        font-size: 11px;
+        font-weight: 800;
+      }
+      .rung:nth-child(2) .rung-level {
+        background: #214c6f;
+      }
+      .rung:nth-child(3) .rung-level {
+        background: #80661f;
+      }
+      .rung:nth-child(4) .rung-level {
+        background: #285f48;
+      }
+      .rung strong {
+        display: block;
+        color: var(--navy);
+        font-size: 14px;
+      }
+      .rung span {
+        display: block;
+        color: var(--muted);
+        font-size: 10px;
+      }
+      .rung-goal {
+        font-size: 10px;
+        color: #485769;
+        background: var(--soft);
+        border-radius: 10px;
+        padding: 9px;
+      }
+      .table-wrap {
+        overflow: auto;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        margin-top: 12px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 860px;
+        font-size: 11px;
+      }
+      th,
+      td {
+        padding: 10px 9px;
+        border-bottom: 1px solid var(--line);
+        text-align: right;
+        vertical-align: top;
+      }
+      th {
+        background: #eef2f5;
+        color: var(--navy);
+        font-weight: 800;
+      }
+      tbody tr:last-child td {
+        border-bottom: 0;
+      }
+      td a {
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .heat {
+        text-align: center;
+        font-weight: 800;
+        border-right: 2px solid #fff;
+      }
+      .h1 {
+        background: #f4d9d9;
+        color: #7a3030;
+      }
+      .h2 {
+        background: #f9e8c8;
+        color: #765919;
+      }
+      .h3 {
+        background: #fff4c8;
+        color: #685815;
+      }
+      .h4 {
+        background: #dcefe3;
+        color: #225d42;
+      }
+      .h5 {
+        background: #b9dfc8;
+        color: #164b34;
+      }
+      .legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        margin-top: 9px;
+        color: var(--muted);
+        font-size: 9px;
+      }
+      .legend span {
+        padding: 4px 8px;
+        border-radius: 999px;
+      }
+      .score {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 64px;
+        padding: 4px 8px;
+        border-radius: 999px;
+        font-size: 9px;
+        font-weight: 800;
+      }
+      .score.high {
+        background: #e8f5ee;
+        color: #1e6747;
+      }
+      .score.mid {
+        background: #fff4d8;
+        color: #745a16;
+      }
+      .score.guard {
+        background: #ffe7e7;
+        color: #8c3434;
+      }
+      .phase {
+        display: grid;
+        grid-template-columns: 82px 1fr;
+        gap: 14px;
+        padding: 15px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .phase:last-child {
+        border-bottom: 0;
+      }
+      .phase-no {
+        width: 70px;
+        min-height: 62px;
+        border-radius: 15px;
+        background: var(--navy);
+        color: #fff;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        font-weight: 800;
+        font-size: 12px;
+        padding: 7px;
+      }
+      .phase h3 {
+        margin: 0 0 3px;
+        font-size: 16px;
+      }
+      .phase p {
+        font-size: 12px;
+        color: #526173;
+        margin: 0;
+      }
+      .step {
+        display: grid;
+        grid-template-columns: 48px 1fr;
+        gap: 13px;
+        padding: 14px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .step:last-child {
+        border-bottom: 0;
+      }
+      .step-no {
+        width: 42px;
+        height: 42px;
+        border-radius: 13px;
+        background: #f6eed8;
+        color: #6c5516;
+        display: grid;
+        place-items: center;
+        font-weight: 800;
+      }
+      .step h3 {
+        margin: 0 0 3px;
+        font-size: 15px;
+      }
+      .step p {
+        margin: 0;
+        color: #526173;
+        font-size: 11px;
+      }
+      ul.clean {
+        margin: 8px 0;
+        padding-right: 22px;
+      }
+      ul.clean li {
+        margin: 5px 0;
+      }
+      .checklist {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 9px;
+        margin-top: 12px;
+      }
+      .check {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 12px;
+        background: #fff;
+        font-size: 11px;
+      }
+      .check strong {
+        display: block;
+        color: var(--navy);
+        font-size: 13px;
+        margin-bottom: 3px;
+      }
+      .check:before {
+        content: "✓";
+        display: inline-grid;
+        place-items: center;
+        width: 22px;
+        height: 22px;
+        border-radius: 7px;
+        background: #e7f4ec;
+        color: var(--green);
+        font-weight: 900;
+        margin-left: 7px;
+        float: right;
+      }
+      .source-list {
+        display: grid;
+        gap: 8px;
+        margin-top: 12px;
+      }
+      .source-link {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 12px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        text-decoration: none;
+        background: #fff;
+      }
+      .source-link strong {
+        color: var(--navy);
+        font-size: 12px;
+      }
+      .source-link span {
+        color: var(--muted);
+        font-size: 10px;
+      }
+      .source-link i {
+        font-style: normal;
+        color: var(--blue);
+        font-size: 10px;
+        white-space: nowrap;
+      }
+      .footer {
+        background: #071525;
+        color: rgba(255, 255, 255, 0.65);
+        text-align: center;
+        padding: 27px;
+        font-size: 10px;
+      }
+      .footer b {
+        color: var(--gold2);
+      }
+      @media (max-width: 1000px) {
+        .layout {
+          grid-template-columns: minmax(0, 1fr);
+        }
+        .side {
+          position: relative;
+          top: 0;
+          max-height: none;
+        }
+        .side nav {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .grid-4 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 760px) {
+        .quick {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .grid-3,
+        .grid-2,
+        .strategy-verdict,
+        .checklist {
+          grid-template-columns: 1fr;
+        }
+        .rung {
+          grid-template-columns: 1fr;
+        }
+        .rung-level {
+          text-align: right;
+        }
+        .side nav {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 520px) {
+        .hero-top {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        .prepared {
+          text-align: right;
+        }
+        .hero h1 {
+          font-size: 34px;
+        }
+        .quick,
+        .grid-4 {
+          grid-template-columns: 1fr;
+        }
+        .card {
+          padding: 18px;
+        }
+        .side nav {
+          grid-template-columns: 1fr;
+        }
+        .brand {
+          min-width: 0;
+          width: 100%;
+        }
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        .hero {
+          padding: 15mm 10mm;
+        }
+        .hero-actions,
+        .side {
+          display: none;
+        }
+        .quick {
+          margin: 12px auto;
+        }
+        .layout {
+          display: block;
+        }
+        .card {
+          box-shadow: none;
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="hero-top">
+          <div class="brand">
+            <div class="brand-mark">م</div>
+            <div class="brand-copy">
+              <strong>مجالس</strong><span>منظومة رقمية للحوكمة والقرارات</span>
+            </div>
+          </div>
+          <div class="prepared">
+            <strong>استراتيجية مجالس</strong>نسخة يوليو 2026
+          </div>
+        </div>
+        <div class="hero-copy">
+          <div class="eyebrow">
+            من أداة عملية إلى شركة بنية تحتية للقرار المؤسسي
+          </div>
+          <h1>كيف تبني مجالس موقعها وتفوز في السوق؟</h1>
+          <p>
+            وثيقة تنفيذية تجمع التموضع وخيارات الفوز وسلم المنتج والمنافسة
+            والتكاملات والشراكات، وتحوّل التصديق الرقمي من فكرة مؤجلة إلى مسار
+            تجاري سريع وخيار ترخيص مستقل له بوابات قرار واضحة.
+          </p>
+          <div class="hero-actions">
+            <a class="btn gold" href="#decision">القرار الاستراتيجي</a>
+            <a class="btn ghost" href="#trust">التصديق الرقمي</a>
+            <a class="btn ghost" href="#license">خارطة الترخيص</a>
+            <a class="btn ghost" href="investment-memo.html"
+              >المذكرة الاستثمارية</a
+            >
+            <a class="btn ghost" href="index.html">لوحة تطوير مجالس</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="quick">
+      <div class="quick-card"><span>التموضع</span><b>حوكمة عربية عملية</b></div>
+      <div class="quick-card">
+        <span>سوق البداية</span><b>الجمعيات والمنشآت المتوسطة</b>
+      </div>
+      <div class="quick-card">
+        <span>الثقة الرقمية</span><b>تكامل الآن · ترخيص عند الجاهزية</b>
+      </div>
+      <div class="quick-card"><span>أفق التنفيذ</span><b>24 شهرا</b></div>
+    </div>
+
+    <div class="layout">
+      <aside class="side">
+        <div class="side-title">محتويات الاستراتيجية</div>
+        <nav>
+          <a href="#decision">القرار الاستراتيجي</a>
+          <a href="#position">التموضع وخيارات الفوز</a>
+          <a href="#ladder">سلم المنتج</a>
+          <a href="#customers">العملاء وحالات الاستخدام</a>
+          <a href="#competition">الخريطة التنافسية</a>
+          <a href="#growth">محرك النمو والإيراد</a>
+          <a href="#integrations">خارطة التكاملات</a>
+          <a href="#trust">استراتيجية التصديق الرقمي</a>
+          <a href="#providers">مقدمو التصديق المرخصون</a>
+          <a href="#partners">الشركاء والتعارضات</a>
+          <a href="#license">خطوات الحصول على الترخيص</a>
+          <a href="#readiness">تنفيذ المتطلبات في مجالس</a>
+          <a href="#roadmap">خارطة 24 شهرا</a>
+          <a href="#kpis">مؤشرات الأداء</a>
+          <a href="#risks">المخاطر والضوابط</a>
+          <a href="#sources">المراجع</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <section class="card" id="decision">
+          <span class="tag">القرار الاستراتيجي</span>
+          <h2>
+            مجالس يبني فئة وسطى بين الملفات المتفرقة والمنصات المؤسسية الثقيلة
+          </h2>
+          <p class="lead">
+            <strong
+              >الرهان هو امتلاك دورة الاجتماع والقرار كاملة بتجربة عربية سهلة،
+              ثم إضافة طبقات الثقة والتكامل والمؤسسية حسب نمو العميل.</strong
+            >
+          </p>
+          <div class="strategy-verdict">
+            <div class="verdict-main">
+              <strong>صيغة الفوز</strong>
+              يبدأ المستخدم خلال دقائق، ينشئ الدعوة والجدول والمحضر والقرار داخل
+              مسار واحد، ثم تنتقل الجهة إلى الاشتراك عند تكرار الاستخدام والحاجة
+              إلى الفريق والأرشيف والتوقيع والتكامل.
+            </div>
+            <div class="verdict-side">
+              <div class="metric">
+                <b>ابدأ خفيفا</b><span>اكتساب ذاتي وتجربة فورية</span>
+              </div>
+              <div class="metric">
+                <b>توسع عميقا</b><span>صلاحيات وتصديق وتكامل</span>
+              </div>
+              <div class="metric">
+                <b>امتلك القرار</b><span>بيانات البند والقرار والتنفيذ</span>
+              </div>
+            </div>
+          </div>
+          <div class="callout gold">
+            <strong>الترتيب التنفيذي:</strong> المنتج المدفوع وإثبات الاستخدام
+            يسبقان الاستثمار الثقيل في بنية مقدم خدمات التصديق. التكامل مع مقدم
+            مرخص يفتح السوق سريعا، ومسار الترخيص المستقل يتقدم مع توافر الحجم
+            والفريق والتمويل.
+          </div>
+        </section>
+
+        <section class="card" id="position">
+          <span class="tag">Strategic Positioning</span>
+          <h2>التموضع وخيارات الفوز</h2>
+          <div class="grid-2">
+            <div class="choice">
+              <div class="number">1</div>
+              <b>الساحة</b
+              ><span
+                >اجتماعات المجالس والجمعيات واللجان الرسمية في السعودية، ثم
+                الخليج، مع تركيز البداية على الجهات التي تحتاج حوكمة واضحة وتبحث
+                عن سرعة وسعر مناسب.</span
+              >
+            </div>
+            <div class="choice">
+              <div class="number">2</div>
+              <b>العميل الأول</b
+              ><span
+                >الجمعيات، الشركات العائلية والمتوسطة، أمناء السر، المستشارون،
+                اللجان الدائمة والمجالس الاستشارية.</span
+              >
+            </div>
+            <div class="choice">
+              <div class="number">3</div>
+              <b>القيمة</b
+              ><span
+                >تحويل الاجتماع من ملفات ورسائل منفصلة إلى سجل مؤسسي مترابط:
+                بند، مناقشة، تصويت، قرار، مسؤول، مهلة، تنفيذ.</span
+              >
+            </div>
+            <div class="choice">
+              <div class="number">4</div>
+              <b>طريقة الفوز</b
+              ><span
+                >عربية أصلية، بدء ذاتي، قوالب محلية، نتائج جاهزة للطباعة، تسعير
+                تدريجي، وتكاملات تخدم بيئة العمل السعودية.</span
+              >
+            </div>
+            <div class="choice">
+              <div class="number">5</div>
+              <b>الأصل المتراكم</b
+              ><span
+                >محرك قواعد الاجتماعات والأنصبة والتصويت، مكتبة القوالب، بيانات
+                دورة القرار، شبكة المستشارين، وتكاملات الثقة.</span
+              >
+            </div>
+            <div class="choice">
+              <div class="number">6</div>
+              <b>قدرات الشركة</b
+              ><span
+                >إدارة منتج، هندسة سحابية وأمن، حوكمة وامتثال، مبيعات قطاعية،
+                نجاح عملاء، وشراكات تقنية وتجارية.</span
+              >
+            </div>
+          </div>
+          <h3>مبادئ توجه القرار</h3>
+          <div class="grid-3">
+            <div class="fact">
+              <b>القرار هو مركز المنتج</b
+              ><span
+                >كل خاصية تربط مباشرة بجودة القرار أو توثيقه أو تنفيذه.</span
+              >
+            </div>
+            <div class="fact">
+              <b>القوالب تتحول إلى قواعد</b
+              ><span
+                >المعرفة النظامية والتشغيلية تتحول إلى منطق منتج قابل
+                للتكرار.</span
+              >
+            </div>
+            <div class="fact">
+              <b>الشريك يسرع الوصول</b
+              ><span
+                >التكامل والتوزيع المشترك يختصران وقت البناء ودورة
+                المبيعات.</span
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="ladder">
+          <span class="tag">Product Ladder</span>
+          <h2>سلم المنتج من الأداة العامة إلى البنية المؤسسية</h2>
+          <div class="ladder">
+            <div class="rung">
+              <div class="rung-level">المستوى 1<br />مجالس العامة</div>
+              <div>
+                <strong>اكتساب وثقة</strong
+                ><span
+                  >إعداد اجتماع ووثائقه محليا داخل المتصفح، تجربة مباشرة وقوالب
+                  أساسية.</span
+                >
+              </div>
+              <div class="rung-goal">
+                الهدف: استخدام واسع، قياس السلوك، وتوليد عملاء محتملين.
+              </div>
+            </div>
+            <div class="rung">
+              <div class="rung-level">المستوى 2<br />مجالس الاحترافية</div>
+              <div>
+                <strong>اشتراك وإيراد متكرر</strong
+                ><span
+                  >حساب جهة، أعضاء وصلاحيات، أرشيف سحابي، مهام، إشعارات، قوالب
+                  وهوية، وفوترة.</span
+                >
+              </div>
+              <div class="rung-goal">
+                الهدف: إثبات الدفع والاحتفاظ وملاءمة المنتج للسوق.
+              </div>
+            </div>
+            <div class="rung">
+              <div class="rung-level">المستوى 3<br />مجالس المؤسسية</div>
+              <div>
+                <strong>توسع داخل الجهة</strong
+                ><span
+                  >دخول موحد SSO، سجل تدقيق، واجهات API، اتفاقية مستوى خدمة،
+                  استضافة محلية، وإدارة متعددة المجالس.</span
+                >
+              </div>
+              <div class="rung-goal">
+                الهدف: عقود سنوية أكبر وتوسع في المستخدمين والوحدات.
+              </div>
+            </div>
+            <div class="rung">
+              <div class="rung-level">المستوى 4<br />مجالس للثقة</div>
+              <div>
+                <strong>توثيق القرار</strong
+                ><span
+                  >توقيع وختم وزمن موثوق، تحقق من الشهادات، سجل محصن ضد العبث،
+                  ثم أهلية ترخيص مستقل عند تحقق بوابات القرار.</span
+                >
+              </div>
+              <div class="rung-goal">
+                الهدف: إيراد على المعاملة وميزة دفاعية وبنية ثقة قطاعية.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="customers">
+          <span class="tag">العملاء وحالات الاستخدام</span>
+          <h2>كل شريحة تدخل من ألم واضح ثم تتوسع داخل المنصة</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>الشريحة</th>
+                  <th>مدخل البيع</th>
+                  <th>أول نتيجة</th>
+                  <th>التوسع</th>
+                  <th>صاحب القرار</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>الجمعيات الأهلية والمهنية</td>
+                  <td>محاضر وقرارات وجمعيات عمومية</td>
+                  <td>وثائق موحدة ووقت إعداد أقل</td>
+                  <td>الأعضاء والتصويت والتوقيع والأرشيف</td>
+                  <td>المدير التنفيذي أو أمين المجلس</td>
+                </tr>
+                <tr>
+                  <td>الشركات العائلية</td>
+                  <td>مجلس العائلة ومجلس الإدارة واللجان</td>
+                  <td>فصل واضح بين المجالس والقرارات</td>
+                  <td>الميثاق والمتابعة والتقارير والتوقيع</td>
+                  <td>رئيس المجلس أو مكتب العائلة</td>
+                </tr>
+                <tr>
+                  <td>المنشآت المتوسطة</td>
+                  <td>اجتماعات الإدارة واللجان</td>
+                  <td>قرار ومسؤول وموعد تنفيذ</td>
+                  <td>تكامل التقويم والمهام والهوية</td>
+                  <td>الرئيس التنفيذي أو مدير الحوكمة</td>
+                </tr>
+                <tr>
+                  <td>أمناء السر والمستشارون</td>
+                  <td>إدارة عدة جهات من لوحة واحدة</td>
+                  <td>قوالب وتكرار وتشغيل أسرع</td>
+                  <td>حساب شريك وعلامة بيضاء وعمولة</td>
+                  <td>المستشار أو الشريك الإداري</td>
+                </tr>
+                <tr>
+                  <td>الجهات الكبرى</td>
+                  <td>الأمن والصلاحيات والتكامل</td>
+                  <td>سجل تدقيق وضبط وصول</td>
+                  <td>SSO وAPI وSLA واستضافة مخصصة</td>
+                  <td>الحوكمة وتقنية المعلومات والمشتريات</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="card" id="competition">
+          <span class="tag">الخريطة التنافسية</span>
+          <h2>
+            مجالس يتفوق في سرعة البدء وترابط دورة الاجتماع، ويحتاج رفع الجاهزية
+            المؤسسية
+          </h2>
+          <p class="lead">
+            درجات تقديرية من 1 إلى 5 مبنية على قراءة المواقع والمنتجات المعلنة
+            وتجربة مجالس الحالية. تستخدم للمقارنة الاستراتيجية وتُحدّث كل ربع
+            سنة.
+          </p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>المنصة</th>
+                  <th>عربية أصلية</th>
+                  <th>سرعة البدء</th>
+                  <th>الدعوة إلى التنفيذ</th>
+                  <th>قوالب الحوكمة</th>
+                  <th>المؤسسية والأمن</th>
+                  <th>الاكتساب الذاتي</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>مجالس</strong></td>
+                  <td class="heat h5">5</td>
+                  <td class="heat h5">5</td>
+                  <td class="heat h5">5</td>
+                  <td class="heat h4">4</td>
+                  <td class="heat h2">2</td>
+                  <td class="heat h5">5</td>
+                </tr>
+                <tr>
+                  <td>مجلس تك Majles.tech</td>
+                  <td class="heat h5">5</td>
+                  <td class="heat h2">2</td>
+                  <td class="heat h4">4</td>
+                  <td class="heat h4">4</td>
+                  <td class="heat h5">5</td>
+                  <td class="heat h2">2</td>
+                </tr>
+                <tr>
+                  <td>المجلس Almajles</td>
+                  <td class="heat h4">4</td>
+                  <td class="heat h2">2</td>
+                  <td class="heat h4">4</td>
+                  <td class="heat h5">5</td>
+                  <td class="heat h5">5</td>
+                  <td class="heat h1">1</td>
+                </tr>
+                <tr>
+                  <td>ديوان Diwan</td>
+                  <td class="heat h4">4</td>
+                  <td class="heat h2">2</td>
+                  <td class="heat h4">4</td>
+                  <td class="heat h4">4</td>
+                  <td class="heat h5">5</td>
+                  <td class="heat h2">2</td>
+                </tr>
+                <tr>
+                  <td>BoardZ</td>
+                  <td class="heat h4">4</td>
+                  <td class="heat h3">3</td>
+                  <td class="heat h4">4</td>
+                  <td class="heat h4">4</td>
+                  <td class="heat h4">4</td>
+                  <td class="heat h2">2</td>
+                </tr>
+                <tr>
+                  <td>Board Link</td>
+                  <td class="heat h4">4</td>
+                  <td class="heat h3">3</td>
+                  <td class="heat h4">4</td>
+                  <td class="heat h3">3</td>
+                  <td class="heat h4">4</td>
+                  <td class="heat h2">2</td>
+                </tr>
+                <tr>
+                  <td>ميثاق Mithaq</td>
+                  <td class="heat h4">4</td>
+                  <td class="heat h3">3</td>
+                  <td class="heat h4">4</td>
+                  <td class="heat h4">4</td>
+                  <td class="heat h4">4</td>
+                  <td class="heat h2">2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="legend">
+            <span class="h1">1 محدود</span><span class="h2">2 أساسي</span
+            ><span class="h3">3 متوسط</span><span class="h4">4 قوي</span
+            ><span class="h5">5 متقدم</span>
+          </div>
+          <div class="callout">
+            <strong>أولوية المنتج:</strong> بناء الحسابات والصلاحيات والأمن
+            والأرشيف السحابي يرفع أضعف محور لدى مجالس، مع المحافظة على ميزة
+            البدء السريع والواجهة العربية.
+          </div>
+        </section>
+
+        <section class="card" id="growth">
+          <span class="tag">محرك النمو والإيراد</span>
+          <h2>
+            الاستخدام المجاني يولد الطلب، والجهة المتكررة تتحول إلى اشتراك
+          </h2>
+          <div class="grid-4">
+            <div class="fact">
+              <b>1. اكتشاف</b
+              ><span>بحث، محتوى حوكمة، إحالات مستشارين، جمعيات واتحادات.</span>
+            </div>
+            <div class="fact">
+              <b>2. تجربة</b
+              ><span>إنشاء اجتماع ووثيقة خلال الجلسة الأولى.</span>
+            </div>
+            <div class="fact">
+              <b>3. تحويل</b
+              ><span>الحفظ السحابي، تعدد المستخدمين، القوالب، الإشعارات.</span>
+            </div>
+            <div class="fact">
+              <b>4. توسع</b
+              ><span>التوقيع، API، SSO، عدة مجالس، تقارير وتنفيذ.</span>
+            </div>
+          </div>
+          <h3>مصادر الإيراد</h3>
+          <div class="grid-3">
+            <div class="fact">
+              <b>اشتراك SaaS</b
+              ><span>باقات شهرية وسنوية حسب الجهة والمستخدمين والمجالس.</span>
+            </div>
+            <div class="fact">
+              <b>إيراد المعاملة</b
+              ><span
+                >التوقيع والختم والزمن الموثوق والتحقق، بهامش فوق تكلفة مقدم
+                الثقة.</span
+              >
+            </div>
+            <div class="fact">
+              <b>تهيئة وتكامل</b
+              ><span>قوالب وهوية ونقل بيانات وتدريب وربط الأنظمة.</span>
+            </div>
+            <div class="fact">
+              <b>شركاء ومستشارون</b
+              ><span>حساب متعدد الجهات، عمولات، إعادة بيع، وعلامة بيضاء.</span>
+            </div>
+            <div class="fact">
+              <b>واجهة برمجية</b
+              ><span>رسوم منصة واستخدام للتكامل مع ERP وDMS والبوابات.</span>
+            </div>
+            <div class="fact">
+              <b>مقيم ودراسات</b
+              ><span>بيع متقاطع منفصل يرفع الثقة وقيمة العلاقة.</span>
+            </div>
+          </div>
+          <div class="callout green">
+            <strong>القاعدة:</strong> يسجل إيراد المنتج والتصديق والتكامل
+            والخدمات الاستشارية في مسارات منفصلة حتى تبقى اقتصاديات SaaS واضحة
+            للمؤسس والمستثمر.
+          </div>
+        </section>
+
+        <section class="card" id="integrations">
+          <span class="tag">Integration Roadmap</span>
+          <h2>التكاملات ترتب حسب أثرها على الاستخدام والبيع</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>الأولوية</th>
+                  <th>التكامل</th>
+                  <th>الاستخدام داخل مجالس</th>
+                  <th>الأثر التجاري</th>
+                  <th>المرحلة</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>البريد وواتساب والرسائل</td>
+                  <td>الدعوات والتذكير والقرار والمهلة</td>
+                  <td>رفع الحضور والعودة للمنصة</td>
+                  <td>0–6 أشهر</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Google Calendar وOutlook</td>
+                  <td>إنشاء الموعد وتحديثه وإرفاق الرابط</td>
+                  <td>دخول في سير العمل اليومي</td>
+                  <td>0–6 أشهر</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Microsoft Teams وZoom</td>
+                  <td>رابط الاجتماع والحضور والتسجيل المرجعي</td>
+                  <td>تقليل الاحتكاك في بدء الاجتماع</td>
+                  <td>0–6 أشهر</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>مقدم تصديق رقمي مرخص</td>
+                  <td>توقيع المحاضر والقرارات وإعادة النسخة الموثقة</td>
+                  <td>إيراد معاملة وثقة أعلى</td>
+                  <td>4–9 أشهر</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>نفاذ والهوية الرقمية</td>
+                  <td>
+                    التحقق من هوية العضو والموقّع حسب الأهلية ومسار الربط
+                    المعتمد
+                  </td>
+                  <td>اعتماد مؤسسي وحجية أقوى</td>
+                  <td>6–12 شهرا</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Google Drive وOneDrive وSharePoint</td>
+                  <td>جلب المرفقات وتصدير النسخ المعتمدة</td>
+                  <td>الاندماج مع بيئة الوثائق</td>
+                  <td>6–12 شهرا</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Webhooks وAPI</td>
+                  <td>القرارات والمهام والحالات والأعضاء</td>
+                  <td>بيع مؤسسي وشركاء تقنيون</td>
+                  <td>9–15 شهرا</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>SSO وSCIM</td>
+                  <td>دخول وصلاحيات ودورة حياة المستخدم</td>
+                  <td>جاهزية الشركات الكبرى</td>
+                  <td>12–18 شهرا</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>ERP وDMS وإدارة المهام</td>
+                  <td>تحويل القرار إلى أمر أو مهمة ومتابعة التنفيذ</td>
+                  <td>قيمة أعلى واحتفاظ أطول</td>
+                  <td>15–24 شهرا</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="callout gold">
+            <strong>قاعدة المعمارية:</strong> يبنى موصل موحد للتصديق والتوقيع
+            يستطيع استبدال مقدم الخدمة أو إضافة مقدم ثان، وتبقى بيانات الاجتماع
+            والوثيقة وسجل القرار مملوكة لمنصة مجالس.
+          </div>
+        </section>
+
+        <section class="card" id="trust">
+          <span class="tag">استراتيجية التصديق الرقمي</span>
+          <h2>
+            مساران متوازيان: إطلاق سريع عبر شريك، وبناء أهلية لترخيص مستقل
+          </h2>
+          <div class="grid-2">
+            <div class="choice">
+              <div class="number">أ</div>
+              <b>التكامل مع مقدم مرخص</b>
+              <span
+                >تختار مجالس مقدمين اثنين للتقييم، تنفذ تجربة API على المحضر
+                والقرار، تتفق على تسعير حجم وSLA وملكية البيانات، ثم تطلق الخدمة
+                داخل الباقة الاحترافية والمؤسسية.</span
+              >
+              <ul class="clean small">
+                <li>وصول أسرع للسوق.</li>
+                <li>رأس مال أخف.</li>
+                <li>اختبار حجم الطلب وسلوك العميل.</li>
+                <li>مرونة في إضافة مزود بديل.</li>
+              </ul>
+            </div>
+            <div class="choice">
+              <div class="number">ب</div>
+              <b>ترخيص مجالس كمقدم خدمات</b>
+              <span
+                >تؤسس الشركة والفريق والبنية والسياسات وسجل الخبرة، ثم تتقدم
+                للفئة المناسبة عندما يتحول التصديق إلى محرك إيراد واستراتيجية
+                دفاعية مستقلة.</span
+              >
+              <ul class="clean small">
+                <li>تحكم أوسع في التجربة والهامش.</li>
+                <li>منتج ثقة يمكن بيعه خارج مجالس.</li>
+                <li>التزام تشغيلي وأمني طويل الأجل.</li>
+                <li>تمويل وفريق تخصصي وبنية PKI.</li>
+              </ul>
+            </div>
+          </div>
+          <h3>بوابات الانتقال إلى الترخيص</h3>
+          <div class="grid-3">
+            <div class="fact">
+              <b>طلب مؤكد</b
+              ><span
+                >عملاء مؤسسيون يطلبون التوقيع والختم داخل مجالس، وحجم معاملات
+                متكرر يمكن قياسه.</span
+              >
+            </div>
+            <div class="fact">
+              <b>اقتصاديات مجدية</b
+              ><span
+                >الهامش المتوقع من التشغيل المباشر يبرر تكلفة الأمن والامتثال
+                والتدقيق والاستمرارية.</span
+              >
+            </div>
+            <div class="fact">
+              <b>فريق ممول</b
+              ><span
+                >قيادة أمن وPKI وامتثال وعمليات، مع تمويل تشغيلي يغطي البناء
+                والاستمرار.</span
+              >
+            </div>
+            <div class="fact">
+              <b>سجل خبرة</b
+              ><span
+                >تشغيل منتج سحابي وتكاملات توقيع فعلية ومشاريع موثقة وقياسات
+                جودة.</span
+              >
+            </div>
+            <div class="fact">
+              <b>بنية جاهزة</b
+              ><span
+                >سياسات وشبكة ومفاتيح وتدقيق واستعادة وخطة إنهاء نشاط قابلة
+                للاختبار.</span
+              >
+            </div>
+            <div class="fact">
+              <b>ميزة سوقية</b
+              ><span
+                >خدمة ثقة مرتبطة بالقرار المؤسسي تمنح مجالس تميزا قابلا للبيع
+                داخل المنصة وخارجها.</span
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="providers">
+          <span class="tag">السوق المنظم</span>
+          <h2>15 شركة تحمل تراخيص تقديم خدمات التصديق الرقمي</h2>
+          <p class="lead">
+            أعلنت هيئة الحكومة الرقمية منح 15 شركة، وتعرض صفحات الترخيص الحكومية
+            رقم كل ترخيص ومدته. الفئة الشاملة تقدم جميع خدمات التصديق، والفئة
+            المحددة تقدم خدمة أو أكثر من خدمات التوقيع والختم والزمن وإدارة
+            الأجهزة، ويقع إصدار الشهادات الرقمية ضمن نطاق الفئة الشاملة.
+          </p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>الشركة</th>
+                  <th>الفئة</th>
+                  <th>رقم الترخيص</th>
+                  <th>القراءة الاستراتيجية لمجالس</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a
+                      href="https://dga.gov.sa/ar/node/3026"
+                      target="_blank"
+                      rel="noopener"
+                      >بعد للاتصالات السلكية واللاسلكية · إمضاء</a
+                    >
+                  </td>
+                  <td>شامل</td>
+                  <td>DCC241201</td>
+                  <td>مرشح تكامل مباشر لخدمات الثقة والتوقيع.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://dga.gov.sa/ar/node/3018"
+                      target="_blank"
+                      rel="noopener"
+                      >تمكين للتقنيات</a
+                    >
+                  </td>
+                  <td>شامل</td>
+                  <td>DCC241202</td>
+                  <td>قوة حكومية ومؤسسية وشريك محتمل للتكامل والبيع.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://dga.gov.sa/ar/node/3029"
+                      target="_blank"
+                      rel="noopener"
+                      >شور العالمية للتقنية</a
+                    >
+                  </td>
+                  <td>شامل</td>
+                  <td>DCC241203</td>
+                  <td>
+                    قدرة تقنية قوية مع تعارض تنافسي مرتفع في حلول المجالس.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://dga.gov.sa/ar/node/3025"
+                      target="_blank"
+                      rel="noopener"
+                      >المتقدمة للتقنية والأمن السيبراني</a
+                    >
+                  </td>
+                  <td>شامل</td>
+                  <td>DCC241204</td>
+                  <td>مرشح للبنية والأمن والتشغيل المؤسسي.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://dga.gov.sa/ar/node/3021"
+                      target="_blank"
+                      rel="noopener"
+                      >ثقة لخدمات الأعمال</a
+                    >
+                  </td>
+                  <td>شامل</td>
+                  <td>DCC241205</td>
+                  <td>قوة في الحكومة الرقمية والتحقق، ودورة شراكة مؤسسية.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://dga.gov.sa/ar/node/3024"
+                      target="_blank"
+                      rel="noopener"
+                      >الشركة الوطنية لأنظمة الحاسب الآلي NATCOM</a
+                    >
+                  </td>
+                  <td>شامل</td>
+                  <td>DCC241206</td>
+                  <td>تكامل أنظمة وقناة للمشاريع المؤسسية.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://dga.gov.sa/ar/node/3019"
+                      target="_blank"
+                      rel="noopener"
+                      >تكامل لخدمات الأعمال</a
+                    >
+                  </td>
+                  <td>شامل</td>
+                  <td>DCC241207</td>
+                  <td>منظومة أعمال واسعة وقدرة على التوزيع والتكامل.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://dga.gov.sa/ar/node/3028"
+                      target="_blank"
+                      rel="noopener"
+                      >ساين إت لتقنية نظم المعلومات</a
+                    >
+                  </td>
+                  <td>شامل</td>
+                  <td>DCC241209</td>
+                  <td>
+                    API وتجربة توقيع وإدارة عقود؛ مرشح سريع مع ضبط حدود المنتج.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://dga.gov.sa/ar/node/3032"
+                      target="_blank"
+                      rel="noopener"
+                      >هات العالمية للاتصالات وتقنية المعلومات</a
+                    >
+                  </td>
+                  <td>شامل</td>
+                  <td>DCC241210</td>
+                  <td>مرشح تكامل ثقة بمرونة تعاقدية وتقنية.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://dga.gov.sa/ar/node/3020"
+                      target="_blank"
+                      rel="noopener"
+                      >الاتصالات المتنقلة السعودية · زين</a
+                    >
+                  </td>
+                  <td>شامل</td>
+                  <td>DCC241211</td>
+                  <td>قوة سحابة واتصالات وتوزيع؛ شراكة مرحلة التوسع.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://dga.gov.sa/ar/node/3023"
+                      target="_blank"
+                      rel="noopener"
+                      >الخدمات الموثوقة للأمن السيبراني</a
+                    >
+                  </td>
+                  <td>محدد</td>
+                  <td>DCS241201</td>
+                  <td>خدمات تخصصية وأمن؛ ملاءمة حسب نطاق الخدمة المرخص.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://dga.gov.sa/ar/node/3027"
+                      target="_blank"
+                      rel="noopener"
+                      >ديار الشرق الأوسط لتكنولوجيا المعلومات</a
+                    >
+                  </td>
+                  <td>محدد</td>
+                  <td>DCS241202</td>
+                  <td>تكامل مؤسسي وخدمات محددة حسب حالة الاستخدام.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://dga.gov.sa/ar/node/3031"
+                      target="_blank"
+                      rel="noopener"
+                      >عزم السعودية للاتصالات وتقنية المعلومات</a
+                    >
+                  </td>
+                  <td>محدد</td>
+                  <td>DCS241203</td>
+                  <td>قدرة تطوير وتحول رقمي وقنوات مؤسسية.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://dga.gov.sa/ar/node/3030"
+                      target="_blank"
+                      rel="noopener"
+                      >صادق لتقنية المعلومات</a
+                    >
+                  </td>
+                  <td>محدد</td>
+                  <td>DCS241204</td>
+                  <td>
+                    مرشح سريع للتوقيع والتحقق مع تداخل مجاور في المستندات
+                    والعقود.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://dga.gov.sa/ar/node/3022"
+                      target="_blank"
+                      rel="noopener"
+                      >تحكم التقنية المحدودة</a
+                    >
+                  </td>
+                  <td>محدد</td>
+                  <td>DCS241205</td>
+                  <td>ملاءمة مؤسسية متخصصة في مرحلة لاحقة.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="small muted">
+            تاريخ التحقق: يوليو 2026. يراجع نطاق كل ترخيص والخدمة التشغيلية
+            وواجهة التكامل مباشرة مع الشركة والهيئة قبل التعاقد.
+          </p>
+        </section>
+
+        <section class="card" id="partners">
+          <span class="tag">الشركاء والتعارضات</span>
+          <h2>الاختيار يبدأ بملاءمة المنتج ثم الحياد التنافسي</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>المجموعة</th>
+                  <th>الأسماء المقترحة</th>
+                  <th>الملاءمة</th>
+                  <th>صيغة العلاقة</th>
+                  <th>الضابط</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>أولوية تجربة التكامل</td>
+                  <td>إمضاء، تمكين، ساين إت، هات، صادق</td>
+                  <td><span class="score high">مرتفعة</span></td>
+                  <td>تجربة API ثم اتفاق حجم وبيع مشترك</td>
+                  <td>
+                    ملكية بيانات مجالس، SLA، سعر واضح، وحق إضافة مزود ثان.
+                  </td>
+                </tr>
+                <tr>
+                  <td>شراكة مؤسسية</td>
+                  <td>ثقة، تكامل، NATCOM، زين</td>
+                  <td><span class="score mid">متوسطة إلى مرتفعة</span></td>
+                  <td>تكامل ومشاريع مشتركة وقنوات سوق</td>
+                  <td>دورة بيع مرحلية ومسؤوليات تنفيذ محددة.</td>
+                </tr>
+                <tr>
+                  <td>بنية وأمن وتشغيل</td>
+                  <td>المتقدمة، الخدمات الموثوقة، ديار، عزم، تحكم</td>
+                  <td><span class="score mid">حسب النطاق</span></td>
+                  <td>تنفيذ تخصصي أو تحالف مشروع</td>
+                  <td>فحص نطاق الترخيص وقدرة API والتشغيل الفعلي.</td>
+                </tr>
+                <tr>
+                  <td>تعارض تنافسي</td>
+                  <td>شور العالمية · شور ترست</td>
+                  <td><span class="score guard">حساسية مرتفعة</span></td>
+                  <td>تقييم تقني أو اتفاق محدود ومحكوم</td>
+                  <td>
+                    شور تعرض ضمن استثماراتها حلول إدارة المجالس، ومنها مجلس تك،
+                    لذلك تحمى خارطة المنتج والعملاء والبيانات وتستبعد الحصرية.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>سلم العلاقة مع الشريك</h3>
+          <div class="grid-4">
+            <div class="partner">
+              <b>1. تكامل</b><span>اختبار تقني وتجربة عميل محددة.</span>
+            </div>
+            <div class="partner">
+              <b>2. بيع مشترك</b><span>عرض موحد وتقاسم إيراد واضح.</span>
+            </div>
+            <div class="partner">
+              <b>3. استثمار</b><span>رأس مال وقناة سوق مع استقلال المنتج.</span>
+            </div>
+            <div class="partner">
+              <b>4. صفقة استراتيجية</b
+              ><span>استحواذ أو اندماج عندما يحققان قيمة أعلى للمساهمين.</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="license">
+          <span class="tag">خارطة الترخيص</span>
+          <h2>خطوات الحصول على ترخيص التصديق الرقمي خطوة بخطوة</h2>
+          <p class="lead">
+            الجهة المنظمة هي هيئة الحكومة الرقمية. اللائحة التنفيذية لنظام
+            التعاملات الإلكترونية تحدد متطلبات الأهلية والبنية والتشغيل، وتتيح
+            الهيئة خدمة دعم استشاري للشركات الراغبة في الترخيص.
+          </p>
+
+          <div class="step">
+            <div class="step-no">1</div>
+            <div>
+              <h3>اختيار فئة الترخيص ونطاق الخدمة</h3>
+              <p>
+                تحدد مجالس الخدمات المستهدفة: إصدار الشهادات، التوقيع
+                الإلكتروني، الختم الإلكتروني، الختم الزمني، إدارة الأجهزة أو
+                مزيج منها. الفئة الشاملة تغطي جميع الخدمات، والفئة المحددة تغطي
+                خدمة أو أكثر من خدمات التوقيع والختم والزمن وإدارة الأجهزة،
+                ويقع إصدار الشهادات الرقمية ضمن نطاق الفئة الشاملة.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-no">2</div>
+            <div>
+              <h3>تأسيس كيان مؤهل</h3>
+              <p>
+                شركة مقرها الرئيسي في المملكة، بسجل تجاري ساري لمدة ستة أشهر من
+                تاريخ التقديم، ويكون النشاط الرئيسي «المعلومات والاتصالات». يثبت
+                عقد التأسيس والسجل والهيكل الإداري والصلاحيات.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-no">3</div>
+            <div>
+              <h3>تكوين برنامج الترخيص</h3>
+              <p>
+                تعيين مسؤول تنفيذي، قائد PKI، أمن سيبراني، امتثال وخصوصية، تشغيل
+                واستمرارية أعمال، قانوني، وتدقيق داخلي. توضع مصفوفة مسؤوليات
+                وخطة ميزانية ومراحل اعتماد.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-no">4</div>
+            <div>
+              <h3>بناء سجل الخبرة</h3>
+              <p>
+                تجميع قائمة المشاريع السابقة في التصديق الرقمي عند توفرها أو في
+                الخدمات الرقمية، مع العقود ونطاق العمل ونتائج التشغيل وخطابات
+                الإنجاز ومؤشرات الخدمة. تكامل مجالس مع مقدم مرخص يصنع دليلا
+                تشغيليا مهما.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-no">5</div>
+            <div>
+              <h3>تحليل الفجوات التنظيمية والفنية</h3>
+              <p>
+                مقارنة الوضع الحالي بنظام التعاملات الإلكترونية ولائحته، وسياسة
+                الشهادة الرقمية، وإجراءات التصديق الرقمي، وضوابط الهيئة،
+                ومتطلبات المركز الوطني للتصديق الرقمي للربط بالجذر الوطني عند
+                انطباقها.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-no">6</div>
+            <div>
+              <h3>تصميم منظومة الثقة</h3>
+              <p>
+                إنشاء بيئة قياسية للشهادات والتواقيع والأختام، وبنية مفاتيح عامة
+                PKI، وإدارة مفاتيح داخل HSM، وخدمات CA وRA وTSA وOCSP وقوائم
+                الإلغاء حسب نطاق الترخيص، مع الفصل بين البيئات والمهام الحساسة.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-no">7</div>
+            <div>
+              <h3>إعداد السياسات والإجراءات</h3>
+              <p>
+                سياسة الشهادة وإجراءات التصديق، التحقق من الهوية، إدارة دورة
+                حياة الشهادة، إدارة المفاتيح، أمن المعلومات، الخصوصية، الاحتفاظ
+                بالسجلات، الاستجابة للحوادث، استمرارية الأعمال والتعافي، إدارة
+                الموردين، الشكاوى، وخطة إنهاء النشاط.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-no">8</div>
+            <div>
+              <h3>إثبات التحقق والاستمرارية</h3>
+              <p>
+                إتاحة التحقق من صحة الشهادات والتواقيع والأختام، وربطها بقوائم
+                الشهادات الموقوفة والملغاة، وبناء أرشفة ونقل قياسي للبيانات،
+                وبدائل تشغيل واستعادة تحافظ على استمرارية الخدمة.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-no">9</div>
+            <div>
+              <h3>الاختبارات والتقييم المستقل</h3>
+              <p>
+                اختبارات اختراق وثغرات، مراجعة إعدادات التشفير والمفاتيح، تمارين
+                تعافي واستمرارية، اختبار إجراءات الإصدار والإيقاف والإلغاء،
+                وتدقيق جاهزية مستقل ينتج سجل ملاحظات وخطة إغلاق.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-no">10</div>
+            <div>
+              <h3>طلب الدعم الاستشاري من الهيئة</h3>
+              <p>
+                الدخول عبر النفاذ الوطني إلى خدمة الدعم الاستشاري في ترخيص
+                التصديق الرقمي، تعبئة النموذج وتقديم الطلب، ثم استخدام الملاحظات
+                لتثبيت نطاق الترخيص وملف الجاهزية قبل التقديم.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-no">11</div>
+            <div>
+              <h3>تقديم طلب الترخيص</h3>
+              <p>
+                تعبئة نموذج الهيئة وإرفاق المستندات النظامية والفنية والإدارية
+                وخطط التشغيل والأدلة. تجيب الشركة عن طلبات المعلومات والاستكمال
+                ضمن المدد التي تحددها الهيئة.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-no">12</div>
+            <div>
+              <h3>الموافقة والمقابل المالي والإطلاق</h3>
+              <p>
+                بعد موافقة الهيئة يسدد المقابل المالي وتصدر وثيقة الترخيص. تنفذ
+                اختبارات ما قبل الإنتاج وإجراءات الإطلاق تحت إشراف الهيئة،
+                ويستكمل الربط الفني بالجذر الوطني والاعتماد التشغيلي حسب نطاق
+                الخدمة.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-no">13</div>
+            <div>
+              <h3>الالتزام المستمر والتجديد</h3>
+              <p>
+                تحفظ حسابات المستفيدين وسجلات العمليات وتحدث باستمرار، وترفع
+                التقارير والمعلومات المطلوبة، وتبلغ الهيئة بتغير الهيكل الإداري
+                خلال خمسة أيام. مدة الترخيص خمس سنوات، ويقدم طلب التجديد قبل
+                انتهائه بتسعين يوما على الأقل.
+              </p>
+            </div>
+          </div>
+
+          <h3>ملف المتطلبات الأساسي</h3>
+          <div class="checklist">
+            <div class="check">
+              <strong>السجل والكيان</strong>سجل ساري، مقر رئيسي سعودي، نشاط
+              رئيسي في المعلومات والاتصالات، ووثائق الصلاحيات.
+            </div>
+            <div class="check">
+              <strong>الخبرة التشغيلية</strong>قائمة مشاريع وأعمال سابقة في
+              التصديق أو الخدمات الرقمية وأدلة الإنجاز.
+            </div>
+            <div class="check">
+              <strong>المنظومة الفنية</strong>بيئة قياسية للشهادات والتواقيع
+              والأختام وفق سياسة الشهادة وإجراءات التصديق.
+            </div>
+            <div class="check">
+              <strong>البنية والموارد</strong>بنية تحتية وموارد إدارية عالية
+              الكفاءة لإدارة دورة حياة خدمات التصديق.
+            </div>
+            <div class="check">
+              <strong>التحقق من الصلاحية</strong>إتاحة بيانات التحقق وربطها
+              بقوائم الإيقاف والإلغاء.
+            </div>
+            <div class="check">
+              <strong>الحفظ والاستمرارية</strong>أرشفة ونقل قياسي وبدائل وخطط
+              تضمن استمرار الخدمة.
+            </div>
+            <div class="check">
+              <strong>خطة إنهاء النشاط</strong>حماية حقوق العملاء والجهات ذات
+              العلاقة عند الإيقاف أو الإلغاء أو انتهاء الترخيص.
+            </div>
+            <div class="check">
+              <strong>الامتثال والتقارير</strong>سجلات دقيقة، تقارير للهيئة،
+              إدارة التغييرات، واستجابة للرقابة.
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="readiness">
+          <span class="tag">التنفيذ داخل مجالس</span>
+          <h2>تحويل متطلبات الترخيص إلى برنامج عمل في مجالس</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>المتطلب</th>
+                  <th>ما يبنى في مجالس</th>
+                  <th>الدليل المطلوب</th>
+                  <th>المالك</th>
+                  <th>التوقيت</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>الكيان المؤهل</td>
+                  <td>
+                    تأسيس الشركة وتحديث النشاط الرئيسي وحماية العلامة والكود
+                    بعقود ملكية فكرية.
+                  </td>
+                  <td>السجل وعقد التأسيس والعقود وقرار الصلاحيات.</td>
+                  <td>المؤسس والقانوني</td>
+                  <td>0–3 أشهر</td>
+                </tr>
+                <tr>
+                  <td>سجل الخبرة</td>
+                  <td>
+                    تشغيل النسخة الاحترافية وتكامل توقيع مع مقدم مرخص وقياس
+                    الخدمة.
+                  </td>
+                  <td>عقود عملاء، تقارير SLA، حجم معاملات، خطابات إنجاز.</td>
+                  <td>المنتج ونجاح العملاء</td>
+                  <td>3–12 شهرا</td>
+                </tr>
+                <tr>
+                  <td>نموذج البيانات</td>
+                  <td>
+                    نسخة وثيقة مقفلة، بصمة Hash، هوية الموقّع، حالة الشهادة، وقت
+                    موثوق، وسلسلة تدقيق.
+                  </td>
+                  <td>مخطط البيانات، سجل الأحداث، وعينات تحقق.</td>
+                  <td>الهندسة</td>
+                  <td>3–9 أشهر</td>
+                </tr>
+                <tr>
+                  <td>موصل الثقة</td>
+                  <td>
+                    طبقة Provider Adapter لعدة مزودين، Webhooks، إعادة المحاولة،
+                    reconciliation، وتحويل الحالات.
+                  </td>
+                  <td>توثيق API واختبارات التكامل والتعافي.</td>
+                  <td>الهندسة</td>
+                  <td>4–9 أشهر</td>
+                </tr>
+                <tr>
+                  <td>الأمن السحابي</td>
+                  <td>
+                    عزل الجهات، تشفير النقل والتخزين، إدارة أسرار ومفاتيح، IAM،
+                    سجلات مركزية، مراقبة وتنبيه.
+                  </td>
+                  <td>معمارية أمن، نتائج اختبار، تقارير مراقبة.</td>
+                  <td>الأمن والهندسة</td>
+                  <td>3–12 شهرا</td>
+                </tr>
+                <tr>
+                  <td>PKI والترخيص</td>
+                  <td>
+                    CA/RA/HSM/OCSP/CRL/TSA حسب الفئة، فصل المهام، مراسم
+                    المفاتيح، وربط الجذر عند انطباقه.
+                  </td>
+                  <td>تصميم تفصيلي، محاضر مراسم، اختبارات دورة الحياة.</td>
+                  <td>قائد PKI</td>
+                  <td>12–24 شهرا</td>
+                </tr>
+                <tr>
+                  <td>السياسات</td>
+                  <td>
+                    CP/CPS، الهوية، الشروط، الخصوصية، الحوادث، الاحتفاظ،
+                    الموردون، الشكاوى، وإنهاء النشاط.
+                  </td>
+                  <td>نسخ معتمدة وسجل مراجعة وتدريب الموظفين.</td>
+                  <td>الامتثال والقانوني</td>
+                  <td>9–18 شهرا</td>
+                </tr>
+                <tr>
+                  <td>الاستمرارية</td>
+                  <td>
+                    نسخ احتياطية مشفرة، موقع تعاف، RTO/RPO، خطط بدائل الموردين
+                    وتمارين دورية.
+                  </td>
+                  <td>نتائج التمارين وتقارير الاستعادة وخطة الإنهاء.</td>
+                  <td>العمليات والأمن</td>
+                  <td>6–18 شهرا</td>
+                </tr>
+                <tr>
+                  <td>التشغيل والرقابة</td>
+                  <td>
+                    SOC ومراقبة 24/7 حسب مستوى الخدمة، إدارة حوادث وتغييرات،
+                    تدقيق صلاحيات وتقارير هيئة.
+                  </td>
+                  <td>تذاكر وسجلات وتقارير شهرية ومؤشرات التزام.</td>
+                  <td>العمليات والامتثال</td>
+                  <td>12–24 شهرا</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="callout green">
+            <strong>أول تنفيذ برمجي:</strong> نسخة وثيقة مقفلة + بصمة رقمية +
+            سجل أحداث + موصل مقدم ثقة. هذه المجموعة تخدم التكامل التجاري الآن
+            وتبني أساس ملف الترخيص لاحقا.
+          </div>
+        </section>
+
+        <section class="card" id="roadmap">
+          <span class="tag">24-Month Roadmap</span>
+          <h2>خارطة تنفيذ متدرجة تربط المنتج بالإيراد والامتثال</h2>
+          <div class="phase">
+            <div class="phase-no">0–3<br />أشهر</div>
+            <div>
+              <h3>تثبيت الشركة والقياس</h3>
+              <p>
+                الكيان والملكية الفكرية والخصوصية والتحليلات، مقابلات العملاء،
+                تعريف الباقات، وخطة الأمن.
+              </p>
+            </div>
+          </div>
+          <div class="phase">
+            <div class="phase-no">4–6<br />أشهر</div>
+            <div>
+              <h3>النسخة الاحترافية</h3>
+              <p>
+                حسابات وصلاحيات وأرشيف وفوترة وإشعارات وتقويم، مع 10–20 جهة
+                مدفوعة واختبارات احتفاظ.
+              </p>
+            </div>
+          </div>
+          <div class="phase">
+            <div class="phase-no">7–9<br />أشهر</div>
+            <div>
+              <h3>التوقيع عبر شريك</h3>
+              <p>
+                اختيار مزودين، تجربة API، نسخة وثيقة مقفلة، سجل تدقيق، إطلاق
+                مدفوع، وقياس حجم المعاملات والهامش.
+              </p>
+            </div>
+          </div>
+          <div class="phase">
+            <div class="phase-no">10–12<br />شهرا</div>
+            <div>
+              <h3>جاهزية المؤسسات</h3>
+              <p>
+                API وWebhooks وتخزين سعودي واختبار أمني وSLA، مع أول عقود سنوية
+                مؤسسية.
+              </p>
+            </div>
+          </div>
+          <div class="phase">
+            <div class="phase-no">13–18<br />شهرا</div>
+            <div>
+              <h3>تقييم قرار الترخيص</h3>
+              <p>
+                دراسة اقتصادية، اختيار الفئة، تحليل فجوات، فريق PKI وامتثال،
+                خدمة الدعم الاستشاري، وتصميم البنية والسياسات.
+              </p>
+            </div>
+          </div>
+          <div class="phase">
+            <div class="phase-no">19–24<br />شهرا</div>
+            <div>
+              <h3>التقديم أو التوسع بالشراكة</h3>
+              <p>
+                عند تحقق بوابات القرار يقدم ملف الترخيص وتنفذ اختبارات الإطلاق.
+                وعند أولوية رأس المال يتوسع نموذج تعدد المزودين والبيع المشترك.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="kpis">
+          <span class="tag">مؤشرات الأداء</span>
+          <h2>مؤشرات تقيس الشركة والمنتج والثقة الرقمية</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>المحور</th>
+                  <th>المؤشر</th>
+                  <th>لماذا يهم</th>
+                  <th>وتيرة القياس</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>الاكتساب</td>
+                  <td>الجهات الجديدة ومصدرها وتكلفة اكتسابها</td>
+                  <td>تحديد القنوات القابلة للتوسع.</td>
+                  <td>شهري</td>
+                </tr>
+                <tr>
+                  <td>التفعيل</td>
+                  <td>نسبة إنشاء أول اجتماع ووثيقة خلال 24 ساعة</td>
+                  <td>قياس سهولة البدء والقيمة الأولى.</td>
+                  <td>أسبوعي</td>
+                </tr>
+                <tr>
+                  <td>التحويل</td>
+                  <td>نسبة الجهات النشطة التي أصبحت مدفوعة</td>
+                  <td>إثبات ملاءمة الباقة والسعر.</td>
+                  <td>شهري</td>
+                </tr>
+                <tr>
+                  <td>الاحتفاظ</td>
+                  <td>الجهات النشطة بعد 30 و90 و180 يوما</td>
+                  <td>قياس الاعتماد الحقيقي على المنتج.</td>
+                  <td>شهري</td>
+                </tr>
+                <tr>
+                  <td>الإيراد</td>
+                  <td>MRR وARR ومتوسط الإيراد والتوسع داخل العميل</td>
+                  <td>جودة الإيراد المتكرر.</td>
+                  <td>شهري</td>
+                </tr>
+                <tr>
+                  <td>القرار</td>
+                  <td>زمن إنشاء المحضر واعتماده ونسبة القرارات المنفذة</td>
+                  <td>إثبات الأثر التشغيلي لمجالس.</td>
+                  <td>شهري</td>
+                </tr>
+                <tr>
+                  <td>التصديق</td>
+                  <td>
+                    المعاملات الموقعة ونسبة النجاح والزمن والتكلفة والهامش
+                  </td>
+                  <td>قياس جدوى التكامل ثم قرار الترخيص.</td>
+                  <td>أسبوعي وشهري</td>
+                </tr>
+                <tr>
+                  <td>الثقة</td>
+                  <td>
+                    التوافر والحوادث وزمن الاستجابة والاستعادة ونتائج التدقيق
+                  </td>
+                  <td>الجاهزية المؤسسية والتنظيمية.</td>
+                  <td>لحظي وربع سنوي</td>
+                </tr>
+                <tr>
+                  <td>الشركاء</td>
+                  <td>العملاء والإيراد المنسوب لكل شريك</td>
+                  <td>توجيه الاستثمار في القنوات.</td>
+                  <td>ربع سنوي</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="card" id="risks">
+          <span class="tag">المخاطر والضوابط</span>
+          <h2>الاستراتيجية تحمي السرعة والاستقلال والثقة</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>الخطر</th>
+                  <th>الأثر</th>
+                  <th>الضابط</th>
+                  <th>إشارة الإنذار</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>استثمار مبكر في الترخيص</td>
+                  <td>استهلاك رأس المال قبل ثبوت الحجم</td>
+                  <td>بوابات قرار وربط الميزانية بطلب وإيراد موثق.</td>
+                  <td>معاملات قليلة وفريق امتثال في طور التكوين.</td>
+                </tr>
+                <tr>
+                  <td>الاعتماد على مقدم واحد</td>
+                  <td>سعر أو تعطل أو قيد تجاري</td>
+                  <td>موصل متعدد المزودين، بنود خروج، وتصدير كامل للسجلات.</td>
+                  <td>ارتفاع التكلفة أو تراجع SLA.</td>
+                </tr>
+                <tr>
+                  <td>شريك يملك منتجا منافسا</td>
+                  <td>تسرب معرفة أو تقييد السوق</td>
+                  <td>
+                    اتفاق محدود، سرية، فصل البيانات، حدود وصول، واستقلال الملكية
+                    الفكرية.
+                  </td>
+                  <td>طلب حصرية أو وصول واسع لخارطة المنتج.</td>
+                </tr>
+                <tr>
+                  <td>حساسية الوثائق</td>
+                  <td>ثقة ومسؤولية نظامية</td>
+                  <td>
+                    تشفير وعزل وصلاحيات وتدقيق واستجابة للحوادث واختبارات
+                    مستقلة.
+                  </td>
+                  <td>صلاحيات زائدة أو سجلات ناقصة.</td>
+                </tr>
+                <tr>
+                  <td>توسع خصائص متشعب</td>
+                  <td>تعقيد المنتج وبطء التسليم</td>
+                  <td>ربط كل تطوير بمؤشر استخدام أو عقد أو متطلب تنظيمي.</td>
+                  <td>قائمة طويلة واستخدام وإيراد منخفضان.</td>
+                </tr>
+                <tr>
+                  <td>اختلاط المنتج بالاستشارة</td>
+                  <td>هامش أقل وصعوبة تقييم الشركة</td>
+                  <td>باقات وفواتير وفريق ومؤشرات منفصلة.</td>
+                  <td>نمو ساعات العمل أسرع من الاشتراكات.</td>
+                </tr>
+                <tr>
+                  <td>ضعف التوثيق التشغيلي</td>
+                  <td>تأخر البيع والترخيص والتدقيق</td>
+                  <td>
+                    سجل قرارات هندسية وسياسات وإثباتات واختبارات منذ النسخة
+                    الاحترافية.
+                  </td>
+                  <td>اعتماد المعرفة على فرد واحد.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="card" id="sources">
+          <span class="tag">المراجع النظامية</span>
+          <h2>مصادر التحقق والتحديث</h2>
+          <p class="lead">
+            تراجع هذه المصادر قبل تقديم طلب الترخيص أو توقيع اتفاقية شريك، لأن
+            الهيئة تستطيع إصدار متطلبات وضوابط إضافية وتحديث آلية الطرح.
+          </p>
+          <div class="source-list">
+            <a
+              class="source-link"
+              href="https://dga.gov.sa/ar/electronic-transactions-law"
+              target="_blank"
+              rel="noopener"
+              ><span
+                ><strong>نظام التعاملات الإلكترونية</strong><br />الأساس النظامي
+                للتعاملات والتوقيع والتصديق.</span
+              ><i>هيئة الحكومة الرقمية ↗</i></a
+            >
+            <a
+              class="source-link"
+              href="https://dga.gov.sa/ar/implementing-regulations-of-electronic-transactions-law"
+              target="_blank"
+              rel="noopener"
+              ><span
+                ><strong>اللائحة التنفيذية لنظام التعاملات الإلكترونية</strong
+                ><br />المواد المنظمة للترخيص والمتطلبات والتزامات المرخص
+                له.</span
+              ><i>هيئة الحكومة الرقمية ↗</i></a
+            >
+            <a
+              class="source-link"
+              href="https://dga.gov.sa/ar/license"
+              target="_blank"
+              rel="noopener"
+              ><span
+                ><strong>التأهيل والتراخيص</strong><br />قائمة التراخيص والشركات
+                المرخصة والفئات.</span
+              ><i>هيئة الحكومة الرقمية ↗</i></a
+            >
+            <a
+              class="source-link"
+              href="https://dga.gov.sa/ar/news/DGA-licenses-companies-digital-certification-services"
+              target="_blank"
+              rel="noopener"
+              ><span
+                ><strong>إعلان ترخيص 15 شركة</strong><br />إعلان الهيئة الصادر
+                في ديسمبر 2024.</span
+              ><i>هيئة الحكومة الرقمية ↗</i></a
+            >
+            <a
+              class="source-link"
+              href="https://dga.gov.sa/ar/listing-services/consulting-support-digital-certification-licensing"
+              target="_blank"
+              rel="noopener"
+              ><span
+                ><strong>الدعم الاستشاري في ترخيص التصديق الرقمي</strong
+                ><br />خدمة موجهة للشركات لشرح الإجراءات ودعم ملف الترخيص.</span
+              ><i>هيئة الحكومة الرقمية ↗</i></a
+            >
+            <a
+              class="source-link"
+              href="https://sdaia.gov.sa/ar/Services/Pages/DigitalCertification.aspx"
+              target="_blank"
+              rel="noopener"
+              ><span
+                ><strong>خدمات التصديق الرقمي والجذر الوطني</strong><br />خدمات
+                سدايا والمركز الوطني للتصديق الرقمي.</span
+              ><i>سدايا ↗</i></a
+            >
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <b>مجالس</b> · استراتيجية التموضع والنمو والثقة الرقمية · يوليو 2026
+    </footer>
+  </body>
+</html>
